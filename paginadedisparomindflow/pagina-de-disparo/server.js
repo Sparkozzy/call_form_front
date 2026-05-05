@@ -97,6 +97,6 @@ app.post('/api/submit-lead', submitLimiter, async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 BFF Mindflow rodando em http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 BFF Mindflow rodando na porta ${PORT}`);
 });
